@@ -262,9 +262,7 @@ a:hover {
   }
 }
 
-#projects, #contact{
-  display:none;
-}
+
 body {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;

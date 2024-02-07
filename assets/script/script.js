@@ -24,17 +24,16 @@ function toggleTopMenu(){
             menuTop.src="./assets/images/Menu.svg";
         }
     }
-
-    const links = document.querySelectorAll('.navbar a');
+    const links = document.querySelectorAll('.menu-items a');
 
     function handleNavClick(clickedName) {
+        const targetElement = document.querySelector(clickedName);
         links.forEach(link => {
             const href = link.getAttribute('href');
-            const targetElement = document.querySelector(href);
             if (href === clickedName) {
                 targetElement.style.display = 'block';
             } else {
-                targetElement.style.display = 'none';
+                document.querySelector(href).style.display = 'none';
             }
         });
     }
