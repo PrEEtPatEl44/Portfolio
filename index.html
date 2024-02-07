@@ -11,20 +11,24 @@
 
   <div class="container">
 
-    <aside class="sidebar">
+    <aside class="sidebar floating sp">
       <div class="profile">
         <img src="./assets/images/1.png" alt="Profile Picture" width="80">
         <div class="profile-info">
           <h1>Preet Patel</h1>
-          <p>Web Developer</p>
+          <p>Software Developer</p>
           <hr>
         </div>
+      </div>
+      <div class="burger-t">
+        <img class="top-items"src="./assets/images/Menu.svg" onclick="toggleTopMenu()">
+        
       </div>
       <div class="contact-info">
         <div class="cont">
             <img src="./assets/images/email.svg">
             <p style="color: lightslategray;">EMAIL</p>
-            <p>preet4042004@gmail.com</p>
+            <a href="mailto:preet4042004@gmail.com" style="color: #dcdde1;"><p>preet4042004@gmail.com</p></a>
         </div>
         <div class="cont">
             <img src="./assets/images/Phone.svg">
@@ -50,11 +54,9 @@
 
     
 
-    <main class="main-content" id="main-content">
+    <main class="main-content floating" id="main-content">
 
-      <header>
-        <h1 style="font-size: 40px;">Full-Stack Developer </h1>
-      </header>
+     
       
       <nav class="navbar" >
         <div >
@@ -65,79 +67,89 @@
 
           <div class="menu-items">
 
-            <a href="#projects">Projects</a>
-            <a href="#contact">contact</a>
-            <a href="#about">about</a>
+            <a href="#about" onclick="handleNavClick('#contact')">about</a>
+            <a href="#projects" onclick="handleNavClick('#projects')">Projects</a>
+            <a href="#contact" onclick="handleNavClick('#contact')">contact</a>
+            
+
           </div>
 
          
     </nav>
+    <section class="about" id="about">
+      <header><h1>About Me<hr></h1></header  
+      <p>A dedicated and industrious student, seeking a Software Developer co-op position. I possess a strong enthusiasm for computer science and am committed to advancing in this field. I am constantly eager to acquire new knowledge and broaden my experiences. My ambition is to thrive in an environment where I can enhance my skills and continue to grow professionally.</p>
+      <header><h2>My Tech Stack<hr></h2></header>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap" width="40" height="40">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C Programming" width="40" height="40">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="40" height="40">
+    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="40" height="40">
+    <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="Heroku" width="40" height="40">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="40" height="40">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" width="40" height="40">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" width="40" height="40">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" width="40" height="40">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="Oracle" width="40" height="40">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="40" height="40">
+    
+    <ul>
+      <li>⚡Experienced in C programming language, adept at building efficient and scalable applications, and implementing complex algorithms</li>
+      <li>⚡Proficient in C++, capable of developing high-performance applications, and leveraging its features for system-level programming.</li>
+      <li>⚡Experienced in Oracle database management, proficient in SQL and PL/SQL for database design, management, and optimization.</li>
+      <li>⚡Spearheaded the concepts in Node.js for server-side development, capable of building scalable and real-time applications, leveraging its event-driven architecture.</li>
+      
+    </ul>
+    <header><h2>Projects<hr></h2></header> 
+    <div class="project-boxes">
+      <div class="project-box">
+        <a href="https://github.com/PrEEtPatEl44/Sorting-Visualizer">
 
-      <section class="bio">
-        <p>Hello! I'm Preet PAtel a passionate web developer with expertise in everything</p>
-      </section>
+          <p> Sorting-visualizer</p>
+          <p>A dynamic tool designed to illustrate the sorting algorithms of Bubble Sort, Insertion Sort, and Selection Sort. Users have the flexibility to adjust parameters such as speed and array length, providing a customizable experience. </p>
+        </a>
+          <div class="project-img">
 
-      <section class="skills" id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <h3>Portfolio Website</h3>
-          <p>.</p>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="40" height="40">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="40" height="40">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40">
+          
         </div>
-        <div class="project">
-          <h3>Task Manager App</h3>
-          <p>An interactive task manager built with React.js.</p>
-        </div>
-      </section>
 
-      <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:john@example.com">john@example.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
-      </section>
+      </div>
+      <div class="project-box">
+        <a href="https://github.com/PrEEtPatEl44/Discord-BOT">
+          <p>Discord-BOT</p>
+          <p>Engineered a versatile Discord bot using Node.js and the Discord.js library to enhance server management and user engagement.Used discord.js to easily link the Discord bot with the Discord API after carefully designing the bot's backend architecture with Node.js to ensure reliable performance. </p>
+          <img class="project-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" width="40" height="40">
+        </a>
+      </div>
+      <div class="project-box">
+        <a href="https://github.com/PrEEtPatEl44/Clinic">
 
-      <section class="about" id="about">
-        <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tenetur repudiandae aliquam quas soluta libero</p> 
-            <p>qui repellat. Maiores sequi sint quam deserunt asperiores alias corrupti vero magnam! Recusandae, quae modi?</p>
-            <br>
-            <br>
+          <p>Veterinary-Clinic-Management-System</p>
+          <p>Developed a robust Text File-based console application employing the C programming language, with a focus on CRUD (Create, Read, Update, Delete) operations </p>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C Programming">
+        </a>
+        
+      </div>
+      <div class="project-box">
+        <a href="https://github.com/PrEEtPatEl44/Aid-Management-system">
 
-            <br>
+          <p>Aid-Management-System</p>
+          <p>Spearheaded the development of an Aid Management System, integrating OOP principles to meticulously organize code and elevate overall functionality. This encompassed features like dynamic item listing, seamless addition/removal, real-time quantity updates, and streamlined shipping functionalities. </p>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40">
+        </a>
+      </div>
+    </div>
+    <div style="text-align: center; " >
 
-            <br>
-
-            <br>
-
-            <br>
-
-            <br>
-
-            <br>
-
-            <br>
-
-            <br>
-
-            <br>
-
-            <br>
-
-            <br>
-
-            <br>
-
-            <br>
-
-            <br>
-
-            <br>
-
-            <br>
-
-            <br>
-
-
-      </section>
+      <a href="https://github.com/PrEEtPatEl44"><img src="./assets/images/github-mark.svg" style="height: 40px; width: 40px;"></a> 
+    </div>
+        
+    
+    </section>
 
     </main>
 
