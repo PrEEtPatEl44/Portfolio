@@ -67,8 +67,8 @@
 
           <div class="menu-items">
 
-            <a href="#about" onclick="handleNavClick('#about')">about</a>
-            <a href="#projects" onclick="handleNavClick('#projects')">Projects</a>
+            <a href="#about" onclick="handleNavClick('#about') " >about</a>
+            <a href="#certifications" onclick="handleNavClick('#certifications'); " >Certifications</a>
             <a href="#contact" onclick="handleNavClick('#contact')">contact</a>
             
 
@@ -78,7 +78,7 @@
     </nav>
     
     <section  id="about">
-      <header><h1>About Me<hr></h1></header  
+      <header><h1>About Me<hr></h1></header > 
       <p>A dedicated and industrious student, seeking a Software Developer co-op position. I possess a strong enthusiasm for computer science and am committed to advancing in this field. I am constantly eager to acquire new knowledge and broaden my experiences. My ambition is to thrive in an environment where I can enhance my skills and continue to grow professionally.</p>
       <header><h2>My Tech Stack<hr></h2></header>
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap" width="40" height="40">
@@ -103,72 +103,19 @@
       
     </ul>
     <header><h2>Projects<hr></h2></header> 
-    <div class="project-boxes">
-      <div class="project-box">
-        <a href="https://github.com/PrEEtPatEl44/Sorting-Visualizer">
-
-          <p> Sorting-visualizer</p>
-          <p>A dynamic tool designed to illustrate the sorting algorithms of Bubble Sort, Insertion Sort, and Selection Sort. Users have the flexibility to adjust parameters such as speed and array length, providing a customizable experience. </p>
-        </a>
-          <div class="project-img">
-
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="40" height="40">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="40" height="40">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40">
-          
-        </div>
-
-      </div>
-      <div class="project-box">
-        <a href="https://github.com/PrEEtPatEl44/Discord-BOT">
-          <p>Discord-BOT</p>
-          <p>Engineered a versatile Discord bot using Node.js and the Discord.js library to enhance server management and user engagement.Used discord.js to easily link the Discord bot with the Discord API after carefully designing the bot's backend architecture with Node.js to ensure reliable performance. </p>
-          <div style="text-align: center;">
-
-            <img class="project-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" width="40" height="40">
-          </div>
-        </a>
-      </div>
-      <div class="project-box">
-        <a href="https://github.com/PrEEtPatEl44/Clinic">
-
-          <p>Veterinary-Clinic-Management-System</p>
-          <p>Developed a robust Text File-based console application employing the C programming language, with a focus on CRUD (Create, Read, Update, Delete) operations </p>
-          <div style="text-align: center;">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C Programming">
-          </div>
-        </a>
-        
-      </div>
-      <div class="project-box">
-        <a href="https://github.com/PrEEtPatEl44/Aid-Management-system">
-
-          <p>Aid-Management-System</p>
-          
-          <p>Spearheaded the development of an Aid Management System, integrating OOP principles to meticulously organize code and elevate overall functionality. This encompassed features like dynamic item listing, seamless addition/removal, real-time quantity updates, and streamlined shipping functionalities. </p>
-          <div style="text-align: center;">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40">
-          </div>
-        </a>
-      </div>
-    </div>
-    <div style="text-align: center; " >
-
-      <a href="https://github.com/PrEEtPatEl44"><img src="./assets/images/github-mark.svg" style="height: 40px; width: 40px;"></a> 
-    </div>
-        
+    <section id="projects-section" class="project-boxes"></section>
+   
   </section>
     
     <section id="contact">
       <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h1 class="h2 article-title">Contact<hr></h2>
         </header>
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28898.045655700974!2d-79.25806329875913!3d43.77770253075948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sScarborough%2C%20Toronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1644850937756!5m2!1sen!2sus" width="400" height="300" loading="lazy"></iframe>
+              ></iframe>
           </figure>
         </section>
 
@@ -186,8 +133,8 @@
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
+            <button class="form-btn" type="submit" onclick="sendEmail()" data-form-btn>
+              
               <span>Send Message</span>
             </button>
 
@@ -195,8 +142,9 @@
 
         </section>
     </section>
-    <section id="projects">
-      <h1>Projects</h1>
+    <section id="certifications">
+      <header><h1>Certifications<hr></h1></header>
+      <div id="certifications-container" style="display: flex;"></div>
     </section>
     </main>
 

@@ -339,3 +339,31 @@ a:hover {
 .about ul li {
   margin-bottom: 10px;
 }
+.input-wrapper {
+  margin-bottom: 20px;
+}
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.form-input.invalid {
+  border-color: red;
+}
+#certifications-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#contact, #certifications{
+  display: none;
+}
+input, textarea{
+  background-color:#242424;
+
+}
+.form-btn{
+  background-color: white;
+}
