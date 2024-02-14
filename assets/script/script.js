@@ -1,19 +1,19 @@
 const certifications = [
     {
       imageSrc: "./assets/images/C1.jpg",
-      description: "Certification 1 Description"
+      description: "The complete HTML and CSS Mastery"
     },
     {
       imageSrc: "./assets/images/C2.jpg",
-      description: "Certification 2 Description"
+      description: "Learning Linux Command Line"
     },
     {
       imageSrc: "./assets/images/C3.jpg",
-      description: "Certification 3 Description"
+      description: "Learning SQL Programming"
     },
     {
       imageSrc: "./assets/images/C4.jpg",
-      description: "Certification 4 Description"
+      description: "Data Structures and OOP with C++: CS104, CS105 Masterclass"
     }
   ];
   const projects = [
@@ -151,7 +151,10 @@ function toggleTopMenu(){
         });
         console.log('Called');
       }
-      createCertificationCards(certifications);
+      document.addEventListener('DOMContentLoaded', function(){
+
+          createCertificationCards(certifications);
+      })
       
     document.addEventListener("DOMContentLoaded", function() {
         const projectsSection = document.getElementById("projects-section");
