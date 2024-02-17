@@ -1,3 +1,9 @@
+* {
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -5,7 +11,16 @@ body {
   color: #dcdde1;
   background-color: #121212;
   transition: background-color 1.5s, color 1.5s;
+  
 }
+
+
+.hover {
+  background-color: red;
+  opacity: 0.5;
+}
+
+
 
 .container {
   display: flex;
