@@ -213,12 +213,12 @@ document.addEventListener('mousemove', function(e){
   cursorinner.style.left = x + 'px';
   cursorinner.style.top = y + 'px';
 });
-document.addEventListener('mousedown', function(){
-  cursor.classList.add('click');
-  cursorinner.classList.add('cursorinnerhover')
-});
+// document.addEventListener('mousedown', function(){
+//   cursor.classList.add('click');
+//   cursorinner.classList.add('cursorinnerhover')
+// });
 
-document.addEventListener('mouseup', function(){
-  cursor.classList.remove('click')
-  cursorinner.classList.remove('cursorinnerhover')
-});
+// document.addEventListener('mouseup', function(){
+//   cursor.classList.remove('click')
+//   cursorinner.classList.remove('cursorinnerhover')
+// });
